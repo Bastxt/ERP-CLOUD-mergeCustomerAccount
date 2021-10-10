@@ -1,0 +1,31 @@
+<ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:ns1="http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/applicationModule/types/"
+    xmlns:ns2="http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/">
+    <ns0:Header />
+    <ns0:Body>
+        <ns1:mergeCustomerAccount>
+            <ns1:customerAccount>
+                <ns2:CustomerAccountId>{insert_data}</ns2:CustomerAccountId>
+                <ns2:PartyId>{insert_data}</ns2:PartyId>
+                <ns2:CustomerAccountSite>
+                    <ns2:CustomerAccountSiteId>{insert_data}</ns2:CustomerAccountSiteId>
+                    <ns2:CustomerAccountId>{insert_data}</ns2:CustomerAccountId>
+                    <ns2:PartySiteId>{insert_data}</ns2:PartySiteId>
+                    <ns2:CustomerAccountContact>
+                        <ns2:CustomerAccountId>{insert_data}</ns2:CustomerAccountId>
+                        <ns2:CustomerAccountSiteId>{insert_data}</ns2:CustomerAccountSiteId>
+                        <ns2:PrimaryFlag>false</ns2:PrimaryFlag>
+                        <ns2:RoleType>CONTACT</ns2:RoleType>
+                        <ns2:CreatedByModule>HZ_WS</ns2:CreatedByModule>
+                        <ns2:RelationshipId>{insert_data}</ns2:RelationshipId>
+                        <ns2:CustomerAccountContactRole>
+                            <ns2:ResponsibilityType>BILL_TO</ns2:ResponsibilityType>
+                            <ns2:PrimaryFlag>true</ns2:PrimaryFlag>
+                            <ns2:CreatedByModule>HZ_WS</ns2:CreatedByModule>
+                        </ns2:CustomerAccountContactRole>
+                    </ns2:CustomerAccountContact>
+                </ns2:CustomerAccountSite>
+            </ns1:customerAccount>
+        </ns1:mergeCustomerAccount>
+    </ns0:Body>
+</ns0:Envelope>
